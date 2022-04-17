@@ -20,6 +20,12 @@ Right paddle:
   Up/Down: Up arrow/Down arrow
   CPU On/Off : O/L
 
+Difficulty:
+  Easy: V
+  Hard-Stay : B
+  Hard-Reset: N
+  Hard-Follow: M
+
 Game speed Up/Down : T/G
 Reset game: R
 Debug On/Off : E/D
