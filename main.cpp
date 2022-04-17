@@ -27,6 +27,12 @@ void instructions() {
     std::cout << "  Up/Down: Up arrow/Down arrow" << std::endl;
     std::cout << "  CPU On/Off : O/L" << std::endl << std::endl;
 
+    std::cout << "Difficulty:" << std::endl;
+    std::cout << "  Easy: V" << std::endl;
+    std::cout << "  Hard - Stay : B" << std::endl;
+    std::cout << "  Hard - Reset: N" << std::endl;
+    std::cout << "  Hard - Follow: M" << std::endl << std::endl;
+
     std::cout << "Game speed Up/Down : T/G" << std::endl;
     std::cout << "Reset game: R" << std::endl;
     std::cout << "Debug On/Off : E/D" << std::endl;
@@ -86,6 +92,23 @@ void checkKeys() {
        if (scale.delay < 0) {
            scale.delay=0;
        }
+    }
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::V)) {
+        aiL.strat = STRAT_EASY;
+        aiR.strat = STRAT_EASY;
+    }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::B)) {
+        aiL.strat = STRAT_STAY;
+        aiR.strat = STRAT_STAY;
+    }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::N)) {
+        aiL.strat = STRAT_RESET;
+        aiR.strat = STRAT_RESET;
+    }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::M)) {
+        aiL.strat = STRAT_FOLLOW;
+        aiR.strat = STRAT_FOLLOW;
     }
 }
 
