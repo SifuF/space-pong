@@ -1,15 +1,19 @@
-# space-pong
-Pong game featuring tough CPU opponents
+# Space Pong
+Pong game featuring tough CPU opponents.
 
-![sphere](img/sp1.png)
+![Pong image](img/pong.gif)
+
+### CPU opponents
 
 Easy mode just moves towards the puck's vertical position and is easy to beat... hard mode integrates the puck velocity and moves towards its intersection with the paddle axis.
 
 Serve strategy is to move a random distance up or down from the intersection (to give a random return trajectory).
 
-And strats for after its serve, it can either stay still, move back to the centre, or mirror the other player.
+After a serve, it can either stay still, move back to the centre, or mirror the other player.
 
-![torus](img/sp.png)
+[Click here for video](img/pong.mp4)
+
+![Pong image](img/sp1.png)
 
 ```
 Left paddle:
