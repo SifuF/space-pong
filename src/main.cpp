@@ -1,5 +1,6 @@
 //Pong by SifuF
 #include <iostream>
+#include <cmath>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include "Scale.h"
