@@ -51,7 +51,7 @@ sudo apt-get install libsfml-dev
 Clone repo and make a new directory called ```build``` inside the ```src```
 directory and enter it.
 ```
-cd {DOWNLOAD_LOCATION}/space-tetris/src
+cd {DOWNLOAD_LOCATION}/space-pong/src
 mkdir build
 cd build
 ```
@@ -66,7 +66,7 @@ make
 ```
 Start the game:
 ```
-./Tetris
+./Pong
 ```
 #### Windows
 Install [CMake](https://cmake.org/), use CMake GUI or command line to generate
